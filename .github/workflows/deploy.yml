@@ -26,3 +26,4 @@ jobs:
         ]
       env:
         KUBECONFIG_FILE: '${{ secrets.KUBECONFIG }}'
+        
