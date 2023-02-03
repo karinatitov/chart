@@ -8,7 +8,7 @@ image:
   repository: docker.io/karinatitov/app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: f548d006e6c0f58a469ad67916a7157cf841711f
+  tag: 769f30014df4b587cb289d9706152b8a6d6881b6
 
 
 imagePullSecrets: []
@@ -42,7 +42,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 8080
+  port: 80
 
 ingress:
   enabled: true
