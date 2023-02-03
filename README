@@ -1,0 +1,11 @@
+# Helm deployment of the app
+
+Built Helm deployment with an ability to enable hpa, for pod autoscaling, in case we would want to scale vertically we could add vpa.
+
+You can install app by running `helm install swish-app swish-app` from the root directory
+
+I did face some issues with getting app deployed to k8s, i did create the terraform to deploy eks cluster with add-ons and managed node group, cluster was deployed successfully but i did face some networking issues, that i would probably need more time to troubleshoot
+
+For ci/cd, we can use pretty much any solution, since we deploy with helm and all the values are easily configurable in values.yaml file, but i think for the one stop shop i would personally use Jenkins, just because it gives an ability to build, test, deploy all together in one pipeline.
+
+i'll link eks cluster repo, so you could see that cluster is being configured by the best practices 
